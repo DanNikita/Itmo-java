@@ -20,8 +20,7 @@ public class Ship {
         this.cargoType = cargoType;
     }
 
-    public Ship(int imo, String name)
-    {
+    public Ship(int imo, String name) {
         this.imo = imo;
         this.name = name;
     }
@@ -29,12 +28,15 @@ public class Ship {
     public int getImo() {
         return imo;
     }
+
     public void setImo(int imo) {
         this.imo = imo;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
