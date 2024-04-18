@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class JavaIterations12 {
     public static void main(String[] args) {
-        printArr();
+        System.out.println("Result: " + Arrays.toString(printArr()));
     }
 
-    public static void printArr() {
+    public static int[] printArr() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the array: ");
         int n = sc.nextInt();
@@ -30,6 +30,6 @@ public class JavaIterations12 {
         for (int i : arr) {
             System.out.println(i);
         }
-        System.out.println("Result: " + Arrays.toString(arr));
+       return arr;
     }
 }

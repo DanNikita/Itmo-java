@@ -12,14 +12,15 @@ public class JavaIterations04 {
         int second = sc.nextInt();
         System.out.println("Enter the third number:");
         int third = sc.nextInt();
-        compareMethod(first,second,third);
+        System.out.println("result is:" + compareMethod(first,second,third));
     }
-    public static void compareMethod (int first, int second, int third)
+    public static boolean compareMethod (int first, int second, int third)
     {
         boolean res = false;
         if (second > first && third > second) {
             res = true;
         }
-        System.out.println("result is:" + res);
+        return res;
+
     }
 }

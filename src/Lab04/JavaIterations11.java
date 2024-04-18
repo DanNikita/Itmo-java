@@ -5,23 +5,23 @@ import java.util.Arrays;
 public class JavaIterations11 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6};
-        arrSort(arr);
+        System.out.println(arrSort(arr));
     }
 
-    public static void arrSort(int[] arr) {
-        boolean result = false;
+    public static String arrSort(int[] arr) {
+        String result = "error";
         for (int i : arr) {
             if (arr[i] != 0 && arr.length - 1 != i) {
                 if (arr[i] > arr[i - 1]) {
                     continue;
                 } else {
-                    System.out.println("Try again");
+                    result =  "Try again";
                     break;
                 }
 
             } else if (arr.length - 1 == i) {
                 if (arr[i] > arr[i - 1]) {
-                    System.out.println("OK");
+                    result =  "OK";
                     break;
                 }
 
@@ -29,6 +29,7 @@ public class JavaIterations11 {
                 continue;
             }
         }
+        return result;
     }
 }
 

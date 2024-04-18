@@ -12,13 +12,15 @@ public class JavaIterations03 {
         int second = sc.nextInt();
         System.out.println("Enter the third number:");
         int third = sc.nextInt();
-        sumMethod(first, second, third);
+
+        System.out.println("result is:" + sumMethod(first, second, third));
     }
-    public static void sumMethod(int first, int second, int third) {
+    public static boolean sumMethod(int first, int second, int third) {
         boolean res = false;
         if ((first + second) == third) {
             res = true;
         }
-        System.out.println("result is:" + res);
+        return res;
+
     }
 }
