@@ -3,7 +3,10 @@ package Lab04;
 public class Javaiterations14 {
     public static void main(String[] args) {
         int[] arr = {3, 2, 2, 1, 3};
+        uniqueArray(arr);
+    }
 
+    public static void uniqueArray(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             int counter = 0;
             for (int j = 0; j < arr.length; j++) {

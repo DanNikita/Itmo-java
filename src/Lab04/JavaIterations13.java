@@ -5,6 +5,10 @@ import java.util.Arrays;
 public class JavaIterations13 {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5};
+        replaceArray(arr1);
+    }
+
+    public static void replaceArray(int[] arr1) {
         int[] arr2 = new int[arr1.length];
         for (int i = 0; i < arr1.length; i++) {
             if (i == 0) {

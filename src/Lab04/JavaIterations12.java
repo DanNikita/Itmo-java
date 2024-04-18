@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class JavaIterations12 {
     public static void main(String[] args) {
+        printArr();
+    }
+
+    public static void printArr() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the array: ");
         int n = sc.nextInt();
