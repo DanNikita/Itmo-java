@@ -11,7 +11,9 @@ public class MainOOP {
 
         //Code for task 5
         SuccessorClass_task5 successor = new SuccessorClass_task5();
-        successor.name = "Nikita";
-        System.out.println(successor.getName());
+//        successor.name = "Nikita";
+//        System.out.println(successor.getName());
+        successor.getName();
+        System.out.println(successor.name);
     }
 }
