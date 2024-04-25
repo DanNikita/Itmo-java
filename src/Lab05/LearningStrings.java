@@ -41,7 +41,7 @@ public class LearningStrings {
     }
 
     public static String explcitContent(String text) {
-        return text.replaceAll("bastard", "!!!EXPLICIT!!!");
+        return text.replaceAll("([Bb])astard.?", "!!!EXPLICIT!!!");
     }
 
     public static String stringInString(String a, String b) {
